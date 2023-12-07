@@ -8,7 +8,6 @@ export default function LoginForm() {
   //comportements
   const handleSubmit = (event) => { 
     event.preventDefault()
-    alert(`Bonjour ${inputValue}`)
     setInputValue("")
    }
 
