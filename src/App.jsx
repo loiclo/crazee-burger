@@ -9,7 +9,6 @@ function App() {
       <Route path="/" element={<LoginPage/>}/>
       <Route path="/order" element={<OrderPage/>}/>
       <Route path="*" element={<ErrorPage/>}/>
-
     </Routes>
   )
 }
