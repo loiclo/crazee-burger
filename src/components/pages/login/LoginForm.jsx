@@ -1,6 +1,6 @@
-import React, { useState } from 'react'
-import { Link, useNavigate } from 'react-router-dom'
-import styled from 'styled-components'
+import React, { useState } from 'react';
+import { Link, useNavigate } from 'react-router-dom';
+import styled from 'styled-components';
 
 export default function LoginForm() {
     // state
@@ -35,7 +35,7 @@ export default function LoginForm() {
 }
 
 
-const LoginFormStyled = styled.form`
+const LoginFormStyled = styled.div`
   background-color: green;`
 
   const InputStyledValue = styled.input`

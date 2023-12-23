@@ -4,8 +4,6 @@
   font-family: 'Open Sans', sans-serif;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Open+Sans:wght@500&display=swap');
-
 :root {
   color: rgba(0, 0, 0, 0.87);
   background-size: cover;
@@ -15,8 +13,6 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
-
 
 a {
   font-weight: 500;
@@ -54,6 +50,7 @@ button {
 button:hover {
   border-color: #ffffff;
 }
+
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
