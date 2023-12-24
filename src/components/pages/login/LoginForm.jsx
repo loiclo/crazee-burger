@@ -10,6 +10,7 @@ export default function LoginForm() {
   //comportements
   const handleSubmit = (event) => { 
     event.preventDefault()
+    console.log("Input Value:", inputValue)
     setInputValue("")
     navigate(`/order/${inputValue}`)
    }
@@ -27,9 +28,8 @@ export default function LoginForm() {
         <br/>
         <h2>Connectez-vous</h2>
         <InputStyledValue value={inputValue} onChange={handleChange} type="text" placeholder="Entez voter prénom" required />
-        <button >Accédez à mon espace</button>
+        <button onClick={handleSubmit}>Accédez à mon espace</button>        
       </LoginFormStyled>
-      
     </div>
   )
 }
