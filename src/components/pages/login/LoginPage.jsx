@@ -18,10 +18,11 @@ const LoginPageStyled = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  position: relative;
 
-  ::before {
+  &::before {
     content: "";
-    background: url("/images/burger-and-fries-background.jpg");
+    background: url("/images/burger-and-fries-background.jpg") rgba(0, 0, 0, 0.5);
     background-size: cover;
     background-position: center;
     background-blend-mode: darken;
