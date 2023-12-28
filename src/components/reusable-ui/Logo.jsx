@@ -4,7 +4,7 @@ export default function Logo() {
   return (
     <LogoStyled>
       <h1>Crazee</h1>
-      <img src="/images/logo-orange.png" alt="logo" />
+      <img src="/images/logo-orange.png" alt="logo-crazee-burger" />
       <h1>Burger</h1>
     </LogoStyled>
   )
@@ -12,7 +12,6 @@ export default function Logo() {
 
 
 const LogoStyled = styled.div`
-  border: 1px solid #ffa01b;
   display: flex;
   align-items: center;
   transform: scale(2.5); 
@@ -36,6 +35,5 @@ const LogoStyled = styled.div`
     height: 60px;
     width: 80px;
     margin: 0 5px;
-    z-index: 1;
   }
   `

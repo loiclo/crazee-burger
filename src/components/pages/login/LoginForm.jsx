@@ -36,7 +36,8 @@ export default function LoginForm() {
 
 
 const LoginFormStyled = styled.div`
-  background-color: green;`
+  background-color: green;
+  color: white;`
 
   const InputStyledValue = styled.input`
   padding: 10px;
