@@ -21,25 +21,52 @@ export default function LoginForm() {
 
     //affichage (render)
   return (
-  
-    <div>
-      <LoginFormStyled action="sumbit" onSubmit={handleSubmit}>
+    <LoginFormStyled action="sumbit" onSubmit={handleSubmit}>
+      <div>
         <h1>Bienvenue chez nous !</h1>
-        <br/>
+        <hr/>
         <h2>Connectez-vous</h2>
-        <InputStyledValue value={inputValue} onChange={handleChange} type="text" placeholder="Entez voter prénom" required />
-        <button onClick={handleSubmit}>Accédez à mon espace</button>        
-      </LoginFormStyled>
-    </div>
+      </div>
+      <div>
+        <input
+          value={inputValue}
+          onChange={handleChange}
+          type="text"
+          placeholder="Entez voter prénom"
+          required />
+        <button onClick={handleSubmit}>Accédez à mon espace</button>
+      </div>  
+      
+    </LoginFormStyled>
+    
   )
 }
 
 
 const LoginFormStyled = styled.div`
   background-color: green;
-  color: white;`
-
-  const InputStyledValue = styled.input`
-  padding: 10px;
+  text-align: center;
+  max-width: 500px;
+  min-width: 400px;
+  margin: 0px auto;
+  padding: 2.5rem 2rem;
   border-radius: 5px;
-  `;
+  font-family: "Amatic SC", cursive;
+
+  hr{
+    border: 1px solid #f56a2c;
+    margin-bottom: 40px;
+  }
+
+  h1{
+    color: white;
+    margin-bottom: 48px;
+  }
+
+  h2{
+    /* color: #8e8b8b; */ //test
+    margin: 20px 10px 10px;
+    color: white;
+    font-size: 36px;
+  }
+  `

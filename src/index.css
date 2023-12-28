@@ -1,7 +1,6 @@
 *{
   padding: 0;
   margin: 0;
-  font-family: 'Open Sans', sans-serif;
 }
 
 :root {
@@ -43,7 +42,6 @@ button {
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
-  background-color: #ff9f22;
   cursor: pointer;
   transition: border-color 0.25s;
 }
