@@ -41,7 +41,7 @@ export default function LoginForm() {
             />
         </div>
           <button className='button-with-icon' type="submit">
-            <span onClick={handleSubmit}>Accéder à mon espace</span>
+            <span>Accéder à mon espace</span>
             <IoChevronForward className='icon'/>
           </button>
       </div>
@@ -51,8 +51,7 @@ export default function LoginForm() {
 }
 
 
-const LoginFormStyled = styled.div`
-  background-color: green;
+const LoginFormStyled = styled.form`
   text-align: center;
   max-width: 500px;
   min-width: 400px;
