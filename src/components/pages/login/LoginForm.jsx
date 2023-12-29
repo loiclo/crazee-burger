@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import styled from 'styled-components';
 import { BsPersonCircle } from 'react-icons/bs';
+import { IoChevronForward } from "react-icons/io5";
 
 export default function LoginForm() {
     // state
@@ -11,7 +12,6 @@ export default function LoginForm() {
   //comportements
   const handleSubmit = (event) => { 
     event.preventDefault()
-    console.log("Input Value:", inputValue)
     setInputValue("")
     navigate(`/order/${inputValue}`)
    }
@@ -28,17 +28,23 @@ export default function LoginForm() {
         <hr/>
         <h2>Connectez-vous</h2>
       </div>
-      <div className='input-with-icon'>
-      <BsPersonCircle className='icon'/>
-        <input
-          value={inputValue}
-          onChange={handleChange}
-          type="text"
-          placeholder="Entez votre prénom"
-          required
-          />
+      <div>
+        <div className='input-with-icon'>
+          <BsPersonCircle className='icon'/>
+            <input
+              value={inputValue}
+              onChange={handleChange}
+              type="text"
+              placeholder="Entrez votre prénom" 
+              required
+
+            />
+        </div>
+          <button className='button-with-icon' type="submit">
+            <span onClick={handleSubmit}>Accéder à mon espace</span>
+            <IoChevronForward className='icon'/>
+          </button>
       </div>
-        <button onClick={handleSubmit}>Accédez à mon espace</button>
         
     </LoginFormStyled>
   )
@@ -75,7 +81,7 @@ const LoginFormStyled = styled.div`
   .input-with-icon{
     background-color: #fff;
     border-radius: 5px;
-    display: flex; //ne me permet pas de aligner au centre si actif
+    display: flex;
     align-items: center;
     padding: 18px 24px;
     margin: 18px 0;
@@ -97,6 +103,51 @@ const LoginFormStyled = styled.div`
         color: lightgrey;
       }
   }
+        .button-with-icon{
+        width: 100%;
+        border: 1px solid red;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        white-space: nowrap;
+        text-decoration: none;
+        line-height: 1;
+
+        padding: 18px 24px;
+        border-radius: 5px;
+        font-size: 15px;
+        font-weight: 800;
+        color: white;
+        background-color: #ff9f1b;
+        border: 1px solid #ff9f1b;
+
+        &:hover:not(:disabled){
+          background-color: white;
+          color: #ff9f1b;
+          border: 1px solid #ff9f1b;
+          transition: all 200ms ease-out;
+        }
+
+        &:active{
+          color: white;
+          background-color: #ff9f1b;
+          border: 1px solid #ff9f1b;
+        }
+
+        &:disabled{
+          opacity: 0.6;
+          cursor: not-allowed;
+        }
+
+        .icon{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-size: 15px;
+          margin-left: 10px;
+        }
+      }
   `
 
 
