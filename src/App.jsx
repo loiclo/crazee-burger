@@ -5,12 +5,18 @@ import ErrorPage from "./components/pages/error/ErrorPage"
 
 function App() {
   return (
-    <Routes>
-      <Route path="/" element={<LoginPage/>}/>
-      <Route path="/order/:username" element={<OrderPage/>}/>
-      <Route path="*" element={<ErrorPage/>}/>
-    </Routes>
+    <div className="loginpage">
+      <Routes>
+        <Route path="/" element={<LoginPage/>}/>
+        <Route path="/order/:username" element={<OrderPage/>}/>
+        <Route path="*" element={<ErrorPage/>}/>
+      </Routes>
+    </div>
   )
 }
 
 export default App
+
+// const LoginPage = styled.LoginPage`
+//   background-image: url("./assets/images/F03burger-background.jpg");
+// `;
