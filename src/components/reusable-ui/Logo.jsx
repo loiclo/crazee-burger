@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { theme } from '/src/theme/index.jsx';
 
 export default function Logo() {
   return (
@@ -20,10 +21,10 @@ const LogoStyled = styled.div`
   h1{
     display: inline;
     text-align: center;
-    color: #ffa01b;
-    font-size: 36px;
+    color: ${theme.colors.primary};
+    font-size: ${theme.fonts.P4};
     line-height: 1em;
-    font-weight: 700;
+    font-weight: ${theme.weights.bold};
     text-transform: uppercase;
     letter-spacing: 1.5px;
     font-family: 'Amatic SC', cursive;

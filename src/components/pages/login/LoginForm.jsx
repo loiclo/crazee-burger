@@ -5,6 +5,7 @@ import TextInput from '../../reusable-ui/TextInput';
 import { BsPersonCircle } from 'react-icons/bs';
 import PrimaryButton from './PrimaryButton';
 import { IoChevronForward } from "react-icons/io5";
+import { theme } from '/src/theme/index.jsx';
 
 
 export default function LoginForm() {
@@ -54,7 +55,7 @@ const LoginFormStyled = styled.form`
   min-width: 400px;
   margin: 0px auto;
   padding: 2.5rem 2rem;
-  border-radius: 5px;
+  border-radius: ${theme.borderRadius.round};
   font-family: "Amatic SC", cursive;
 
   hr{
@@ -63,22 +64,23 @@ const LoginFormStyled = styled.form`
   }
 
   h1{
-    color: white;
+    color: ${theme.colors.white};
     margin-bottom: 48px;
   }
 
   h2{
     /* color: #8e8b8b; */ //test
     margin: 20px 10px 10px;
-    color: white;
-    font-size: 36px;
+    color: ${theme.colors.white};
+    font-size: ${theme.fonts.P4};
+
   }
   
   .icon{
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 15px;
+    font-size: ${theme.fonts.P0};
     margin-left: 10px;
     }
     `
