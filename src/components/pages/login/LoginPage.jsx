@@ -2,11 +2,11 @@ import Logo from "../../reusable-ui/Logo";
 import LoginForm from "./LoginForm";
 import styled from 'styled-components';
 
-export default function LoginPage() {
+export default function LoginPage( { className } ) {
   //affichage (render)
   return ( 
     <LoginPageStyled>
-      <Logo/>
+      <Logo className={'logo-login-page'}/>
       <LoginForm/>
     </LoginPageStyled>
   );
@@ -32,5 +32,10 @@ const LoginPageStyled = styled.div`
     right: 0;
     bottom: 0;
     z-index: -1;
+  }
+
+  .logo-login-page{
+    transform: scale(2.5);
+
   }
 `;
