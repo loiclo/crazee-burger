@@ -6,9 +6,9 @@ import { theme } from '/src/theme/index.jsx';
 export default function NavBar({ username }) {
     
   return (
-    <NavbarStyled>
+    <NavbarStyled >
       <Logo/>
-      <NavbarRightSide/>
+      <NavbarRightSide username={username}/>
     </NavbarStyled>
   )
 }

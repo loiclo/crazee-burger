@@ -9,7 +9,7 @@ export default function Profile({ username }) {
     <ProfileStyled>
       <div className="info">
         <p> 
-          Hey, <b>props ne fonctionne pas</b>
+          Hey, <b> {username} </b>
          </p>
         <Link to="/">
           <div className="description">
