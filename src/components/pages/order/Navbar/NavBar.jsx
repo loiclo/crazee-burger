@@ -21,7 +21,7 @@ const NavbarStyled = styled.nav`
   justify-content: space-between;
   padding: 0 20px;
   //align-items: center;
-
+  border-bottom: 1px solid ${theme.colors.greyLight};
   border-top-left-radius: ${theme.borderRadius.extraRound};
   border-top-right-radius: ${theme.borderRadius.extraRound};
 

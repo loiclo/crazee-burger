@@ -25,7 +25,7 @@ grid-template-columns: 1fr;
 /* grid-template-columns: 25% 1fr; use this when Basket will be needed */
 overflow-y: scroll;
 
-.basket{
+/* .basket{
   background: purple;
-}
+} */
 `;
