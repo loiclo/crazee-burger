@@ -9,7 +9,7 @@ export default function Main() {
 }
 
 const Mainstyled = styled.div`
-background: green;
+background: ${theme.colors.background_white};
 flex: 1;
 border-bottom-left-radius: ${theme.borderRadius.extraRound};
 border-bottom-right-radius: ${theme.borderRadius.extraRound};
