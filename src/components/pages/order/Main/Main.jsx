@@ -23,7 +23,7 @@ border-bottom-right-radius: ${theme.borderRadius.extraRound};
 display: grid;
 grid-template-columns: 1fr;
 /* grid-template-columns: 25% 1fr; use this when Basket will be needed */
-
+overflow-y: scroll;
 
 .basket{
   background: purple;
