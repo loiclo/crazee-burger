@@ -2,7 +2,7 @@ import styled from "styled-components";
 import NavbarRightSide from "./NavbarRightSide";
 import Logo from "/src/components/reusable-ui/Logo";
 import { theme } from '/src/theme/index.jsx';
-import { refreshPage } from "../../../utils/window";
+import { refreshPage } from "../../../../utils/window";
 
 export default function NavBar({ username }) {
     

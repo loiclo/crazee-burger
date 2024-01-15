@@ -1,7 +1,7 @@
 import { useParams } from "react-router-dom";
 import styled from "styled-components";
-import NavBar from "./NavBar";
-import Main from "./Main";
+import NavBar from "./Navbar/NavBar";
+import Main from "./Main/Main";
 import { theme } from '/src/theme/index.jsx';
 
 export default function OrderPage() {
@@ -31,10 +31,5 @@ const OrderPageStyled = styled.div`
     display: flex;
     flex-direction: column;
     border-radius: ${theme.borderRadius.extraRound};
-
-
-
-
-
   }
 `;
