@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import { theme } from '/src/theme/index.jsx';
 import PrimaryButton from "../../../reusable-ui/PrimaryButton";
+import { formatPrice } from "../../../../utils/maths";
 
 export default function Product({title, imageSource, price}) {
   return (
@@ -11,7 +12,7 @@ export default function Product({title, imageSource, price}) {
     <div className="text-info">
         <div className="title">{title}</div>
         <div className="description">
-            <div className="left-description">{price} €</div>
+            <div className="left-description">{formatPrice(price)}</div>
             <div className="right-desciption">
               <PrimaryButton className="primary-button" label={"Ajouter"}/> 
             </div>
