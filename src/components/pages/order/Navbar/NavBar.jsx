@@ -2,7 +2,7 @@ import styled from "styled-components";
 import NavbarRightSide from "./NavbarRightSide";
 import Logo from "/src/components/reusable-ui/Logo";
 import { theme } from '/src/theme/index.jsx';
-import { refreshPage } from "../../../utils/window";
+import { refreshPage } from "../../../../utils/window";
 
 export default function NavBar({ username }) {
     
@@ -21,7 +21,7 @@ const NavbarStyled = styled.nav`
   justify-content: space-between;
   padding: 0 20px;
   //align-items: center;
-
+  border-bottom: 1px solid ${theme.colors.greyLight};
   border-top-left-radius: ${theme.borderRadius.extraRound};
   border-top-right-radius: ${theme.borderRadius.extraRound};
 
