@@ -29,16 +29,23 @@ const PrimaryButtonStyled = styled.button`
   background-color: #ff9f1b;
   border: 1px solid #ff9f1b;
 
-  :hover {
-    color: ${theme.colors.primary};
+  &:hover:not(:disabled){
     background-color: ${theme.colors.white};
-    border: 1px solid ${theme.colors.primary};
+    color: ${theme.colors.primary_burger};
+    border: 1px solid ${theme.colors.primary_burger};
     transition: all 200ms ease-out;
-  }
-  :active {
-    background-color: ${theme.colors.primary};
+    }
+
+    &:active{
     color: ${theme.colors.white};
-  }
+    background-color: ${theme.colors.primary_burger};
+    border: 1px solid ${theme.colors.primary_burger};
+    }
+
+    &:disabled{
+    opacity: 0.6;
+    cursor: not-allowed;
+    } 
 
   &.is-disabled {
     opacity: 50%;
@@ -50,11 +57,11 @@ const PrimaryButtonStyled = styled.button`
     border: 1px solid white;
     background-color: ${theme.colors.white};
     color: ${theme.colors.primary};
-    :hover {
+    /* :hover {
       color: ${theme.colors.white};
       background-color: ${theme.colors.primary};
       border: 1px solid ${theme.colors.white};
-    }
+    } */
     :active {
       background-color: ${theme.colors.white};
       color: ${theme.colors.primary};
