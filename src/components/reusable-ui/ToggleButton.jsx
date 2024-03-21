@@ -5,8 +5,8 @@ import { theme } from "../../theme"
 export default function ToggleButton({
   isChecked,
   onToggle,
-  labelIfChecked = "DÉSACTIVER LE MODE ADMIN",
-  labelIfUnchecked = "ACTIVER LE MODE ADMIN",
+  labelIfChecked = "Fermer",
+  labelIfUnchecked = "Ouvrir",
 }) {
   return (
     <ToggleButtonStyled>
@@ -100,7 +100,7 @@ const ToggleButtonStyled = styled.div`
       left: auto;
       opacity: 1;
       color: ${theme.colors.primary};
-      font-weight: ${theme.weights.bold};
+      font-weight: ${theme.fonts.bold};
     }
 
     // small circle when not checked
@@ -109,7 +109,7 @@ const ToggleButtonStyled = styled.div`
       background-color: ${theme.colors.primary};
     }
 
-    // box container when checked
+    // box container when checkedF06: 
     &.toggle:checked + label {
       text-align: left;
       border-color: ${theme.colors.primary};
